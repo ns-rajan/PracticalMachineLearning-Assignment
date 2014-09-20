@@ -192,31 +192,31 @@ confusionMatrix(predictions2,testing$classe)</code></pre>
 ## Prediction    A    B    C    D    E
 ##          A 1395    4    0    0    0
 ##          B    0  942    6    0    0
-##          C    0    3  848    8    2
-##          D    0    0    1  796    2
-##          E    0    0    0    0  897
+##          C    0    3  848    9    2
+##          D    0    0    1  795    3
+##          E    0    0    0    0  896
 ## 
 ## Overall Statistics
 ##                                           
-##                Accuracy : 0.9947          
-##                  95% CI : (0.9922, 0.9965)
+##                Accuracy : 0.9943          
+##                  95% CI : (0.9918, 0.9962)
 ##     No Information Rate : 0.2845          
 ##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
 ##                                           
-##                   Kappa : 0.9933          
+##                   Kappa : 0.9928          
 ##  Mcnemar's Test P-Value : NA              
 ## 
 ## Statistics by Class:
 ## 
 ##                      Class: A Class: B Class: C Class: D Class: E
-## Sensitivity            1.0000   0.9926   0.9918   0.9900   0.9956
-## Specificity            0.9989   0.9985   0.9968   0.9993   1.0000
-## Pos Pred Value         0.9971   0.9937   0.9849   0.9962   1.0000
-## Neg Pred Value         1.0000   0.9982   0.9983   0.9981   0.9990
+## Sensitivity            1.0000   0.9926   0.9918   0.9888   0.9945
+## Specificity            0.9989   0.9985   0.9965   0.9990   1.0000
+## Pos Pred Value         0.9971   0.9937   0.9838   0.9950   1.0000
+## Neg Pred Value         1.0000   0.9982   0.9983   0.9978   0.9988
 ## Prevalence             0.2845   0.1935   0.1743   0.1639   0.1837
-## Detection Rate         0.2845   0.1921   0.1729   0.1623   0.1829
-## Detection Prevalence   0.2853   0.1933   0.1756   0.1629   0.1829
-## Balanced Accuracy      0.9994   0.9956   0.9943   0.9947   0.9978</code></pre>
+## Detection Rate         0.2845   0.1921   0.1729   0.1621   0.1827
+## Detection Prevalence   0.2853   0.1933   0.1758   0.1629   0.1827
+## Balanced Accuracy      0.9994   0.9956   0.9942   0.9939   0.9972</code></pre>
 <p>Now prepare the Project Submission using Course provided code.</p>
 <pre class="r"><code>pml_write_files = function(x){
   n = length(x)
@@ -235,7 +235,7 @@ answers</code></pre>
 ##  B  A  B  A  A  E  D  B  A  A  B  C  B  A  E  E  A  B  B  B 
 ## Levels: A B C D E</code></pre>
 <pre class="r"><code>pml_write_files(answers)</code></pre>
-<p>As it is clearly visible in the result of the confusionmatrix, the model is good and efficient because it has an accuracy of 0.9997 and very good sensitivity &amp; specificity values on the testing dataset. (the lowest value is 0.992 for the sensitivity of the class C)</p>
+<p>As it is clearly visible in the result of the confusionmatrix, the model is good and efficient because it has an accuracy of 0.9947 and very good sensitivity &amp; specificity values on the testing dataset. (the lowest value is 0.992 for the sensitivity of the class C)</p>
 <p>The course project also gets 100% - 20 out of 20. The experiments with PCA and other models did not get as good of accuracy.</p>
 
 

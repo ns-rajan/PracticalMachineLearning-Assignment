@@ -107,6 +107,6 @@ pml_write_files(answers)
 
 ```
 
-As it is clearly visible in the result of the confusionmatrix, the model is good and efficient because it has an accuracy of 0.9947 and very good sensitivity & specificity values on the testing dataset. (the lowest value is 0.992 for the sensitivity of the class C)
+As it is clearly visible in the result of the confusionmatrix, the model is good and efficient because it has an accuracy of 0.9943 and very good sensitivity & specificity values on the testing dataset. (the lowest value is 0.992 for the sensitivity of the class C)
 
 The course project also gets 100% - 20 out of 20.  The experiments with PCA and other models did not get as good of accuracy.
